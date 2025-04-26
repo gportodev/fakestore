@@ -25,6 +25,8 @@ export default defineConfig([
       sourceType: 'module',
     },
     rules: {
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/strict-boolean-expressions': 'off',
       '@typescript-eslint/consistent-type-imports': 'off',

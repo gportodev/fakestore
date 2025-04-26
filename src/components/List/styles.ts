@@ -6,12 +6,15 @@ export default StyleSheet.create({
   container: {
     flex: 1,
   },
-  header: {},
+  header: {
+    paddingVertical: 16,
+    paddingHorizontal: 24,
+  },
   columnContainer: {
-    gap: 16,
+    gap: 8,
+    paddingHorizontal: 24,
   },
   listContainer: {
-    padding: 24,
     gap: 10,
   },
   emptyContainer: {

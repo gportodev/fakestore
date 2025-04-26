@@ -1,15 +1,17 @@
 import { StyleSheet } from 'react-native';
 import { Fonts } from '../../constants/fonts';
+import colors from '../../constants/colors';
 
 export default StyleSheet.create({
   container: {
     width: '100%',
-    backgroundColor: 'red',
+    backgroundColor: colors.white,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingBottom: 24,
   },
   title: {
-    fontSize: 24,
-    fontFamily: Fonts.roboto_semibold,
+    fontSize: 32,
+    fontFamily: Fonts.lobster_regular,
   },
 });

@@ -1,6 +1,7 @@
-import { NavigatorScreenParams } from '@react-navigation/native';
+import { NavigatorScreenParams, RouteProp } from '@react-navigation/native';
 import { Product } from '../dtos/ProductDTO';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 
 type StackParamList = {
   Home: undefined;
@@ -10,7 +11,7 @@ type StackParamList = {
 };
 
 type TabParamList = {
-  Home: NavigatorScreenParams<StackParamList>;
+  Main: NavigatorScreenParams<StackParamList>;
   Favorites: undefined;
 };
 
@@ -18,4 +19,13 @@ type HomeProps = {
   navigation: NativeStackNavigationProp<StackParamList, 'Home'>;
 };
 
-export { StackParamList, TabParamList, HomeProps };
+type FavoriteProps = {
+  navigation: BottomTabNavigationProp<TabParamList, 'Favorites'>;
+};
+
+type DetailProps = {
+  navigation: NativeStackNavigationProp<StackParamList, 'Detail'>;
+  route: RouteProp<StackParamList, 'Detail'>;
+};
+
+export { StackParamList, TabParamList, HomeProps, FavoriteProps, DetailProps };

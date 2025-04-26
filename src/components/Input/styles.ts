@@ -1,11 +1,20 @@
 import { StyleSheet } from 'react-native';
 import { Fonts } from '../../constants/fonts';
+import colors from '../../constants/colors';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
     fontSize: 16,
     fontFamily: Fonts.roboto_regular,
-    paddingLeft: 50,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  inputContainer: {
+    width: '100%',
+    fontSize: 16,
+    fontFamily: Fonts.roboto_regular,
+    backgroundColor: colors.white,
+    borderRadius: 8,
+    paddingLeft: 40,
   },
 });

@@ -1,11 +1,13 @@
 import React, { useCallback } from 'react';
 import { SafeAreaView } from 'react-native';
-import { Header } from '../../components/Header';
 import { HomeProps } from '../../routes/types';
 import { Product } from '../../dtos/ProductDTO';
 import { List } from '../../components/List';
+import { useUser } from '../../context/user';
 
 function Home({ navigation }: HomeProps): JSX.Element {
+  const { list } = useUser();
+
   const onPress = useCallback(
     (item: Product) => {
       navigation.navigate('Detail', { item });
@@ -19,9 +21,7 @@ function Home({ navigation }: HomeProps): JSX.Element {
         flex: 1,
       }}
     >
-      <Header />
-
-      <List onPress={onPress} />
+      <List list={list} onPress={onPress} screen="home" />
     </SafeAreaView>
   );
 }

@@ -4,6 +4,7 @@ import { Fonts } from '../../constants/fonts';
 
 export default StyleSheet.create({
   container: {
+    flex: 1,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: colors.grayishBlue,
@@ -20,26 +21,24 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   cardTitle: {
-    fontSize: 14,
+    fontSize: 20,
     fontFamily: Fonts.roboto_medium,
     color: colors.black,
-    lineHeight: 14,
   },
   cardPrice: {
-    fontSize: 14,
+    fontSize: 18,
     fontFamily: Fonts.roboto_semibold,
     color: colors.black,
   },
   cardRatingContainer: {
     flexDirection: 'row',
     gap: 4,
-    alignItems: 'flex-end',
+    alignItems: 'center',
     justifyContent: 'center',
   },
   cardRatingText: {
-    fontSize: 12,
+    fontSize: 16,
     fontFamily: Fonts.roboto_regular,
     color: colors.deepFog,
-    lineHeight: 12,
   },
 });

@@ -9,6 +9,7 @@ interface Product {
     rate: number;
     count: number;
   };
+  favorite?: boolean;
 }
 
 export { Product };

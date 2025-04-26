@@ -9,7 +9,7 @@ export default function App(): JSX.Element {
   const isLoading = useCachedResources();
 
   if (!isLoading) {
-    return <Loader fullscreen />;
+    return <Loader />;
   }
 
   return (
