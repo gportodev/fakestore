@@ -33,3 +33,10 @@ $ yarn install
 $ yarn start
 ```
 
+- Compatible plataforms :
+  - Emulator:
+    - Android Studio(https://developer.android.com/studio).
+  - Smartphone:
+    - Expo Client(install  from the store, open it and scan the 'QR Code').
+
+
