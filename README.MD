@@ -35,8 +35,10 @@ $ yarn start
 
 - Compatible plataforms :
   - Emulator:
-    - Android Studio(https://developer.android.com/studio).
+    - [Android Studio](https://developer.android.com/studio)
+    - [Xcode](https://developer.apple.com/xcode/)
+    
   - Smartphone:
-    - Expo Client(install  from the store, open it and scan the 'QR Code').
+    - Expo Go(install  from the store, open it and scan the 'QR Code').
 
 
